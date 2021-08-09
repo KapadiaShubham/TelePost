@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/TelePost/static/css/main.967be582.chunk.css",
+    "main.js": "/TelePost/static/js/main.89aba31d.chunk.js",
+    "main.js.map": "/TelePost/static/js/main.89aba31d.chunk.js.map",
+    "runtime-main.js": "/TelePost/static/js/runtime-main.bdf2abc3.js",
+    "runtime-main.js.map": "/TelePost/static/js/runtime-main.bdf2abc3.js.map",
+    "static/css/2.bd9a6a05.chunk.css": "/TelePost/static/css/2.bd9a6a05.chunk.css",
+    "static/js/2.616e7839.chunk.js": "/TelePost/static/js/2.616e7839.chunk.js",
+    "static/js/2.616e7839.chunk.js.map": "/TelePost/static/js/2.616e7839.chunk.js.map",
+    "static/js/3.d4a89280.chunk.js": "/TelePost/static/js/3.d4a89280.chunk.js",
+    "static/js/3.d4a89280.chunk.js.map": "/TelePost/static/js/3.d4a89280.chunk.js.map",
+    "index.html": "/TelePost/index.html",
+    "static/css/2.bd9a6a05.chunk.css.map": "/TelePost/static/css/2.bd9a6a05.chunk.css.map",
+    "static/css/main.967be582.chunk.css.map": "/TelePost/static/css/main.967be582.chunk.css.map",
+    "static/js/2.616e7839.chunk.js.LICENSE.txt": "/TelePost/static/js/2.616e7839.chunk.js.LICENSE.txt",
+    "static/media/telepost.ec78045a.png": "/TelePost/static/media/telepost.ec78045a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bdf2abc3.js",
+    "static/css/2.bd9a6a05.chunk.css",
+    "static/js/2.616e7839.chunk.js",
+    "static/css/main.967be582.chunk.css",
+    "static/js/main.89aba31d.chunk.js"
+  ]
+}

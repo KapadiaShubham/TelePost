@@ -1,0 +1,184 @@
+.notificationDiv {
+    /* background-color: #373534; */
+    background-color: #323fbe;
+    /* color: #eee; */
+    color: #fff;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.loginPageBackground {
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    background-color: #c4c4c4;
+    padding: 10vh;
+}
+
+.loginPageDiv {
+    width: 80vw;
+    height: auto;
+    min-height: 80vh;
+    margin: 0 auto;
+    /* background-color: #f0efe9ca; */
+    position: relative;
+    /* border-radius: 1rem; */
+    /* box-shadow: 0 0 4rem #bbb; */
+    /* display: flex; */
+}
+
+.bannerArea {
+    width: 50%;
+    height: auto;
+    min-height: 80vh;
+    background-color: #f0efe9;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.telepost {
+    width: 5rem;
+    margin: 2rem 0 0 2.5rem;
+}
+
+.loginBannerDiv {
+    padding: 15% 0;
+    text-align: center;
+}
+
+.loginBanner {
+    width: 70%;
+}
+
+.formArea {
+    width: 50%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.currentUserDiv {
+    display: flex;
+    align-items: flex-end;
+}
+
+.sign-out-btn {
+    margin: 1.8rem 2rem 0 0;
+    padding: 1rem 1.5rem !important;
+}
+
+.createPostDiv {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.createPostInput {
+    width: 40%;
+    padding: 1rem 1rem;
+    border: 3.5px solid #c4c4c4;
+    border-radius: 10px 0 0 10px;
+}
+
+.createPostInput:focus {
+    outline: none;
+}
+
+.createPostButton {
+    /* border: none;
+    padding: 0.5rem 0.5rem;
+    background-color: #c4c4c4;
+    border-radius: 0 10px 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    transition: all .2s; */
+    /* -------------------------------------------------------- */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 50px;
+    background-color: lime;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 0.25rem;
+}
+
+.createPostButton:hover {
+    background-color: #01937C;
+}
+
+.emptyText {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.timeline-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fa,
+.fas {
+    font-size: 1.9rem;
+}
+
+.currentUserDiv .author-div .fa-user-circle {
+    font-size: 2.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .loginPageBackground {
+        padding: 3vh 0;
+        min-height: 94vh;
+        height: auto;
+    }
+    .loginPageDiv {
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        height: auto;
+    }
+    .bannerArea {
+        background-color: transparent;
+        min-height: 0;
+    }
+    .loginBannerDiv {
+        display: none;
+    }
+    .formArea {
+        width: 100%;
+    }
+    .telepost {
+        width: 3rem;
+        transform: translateY(-.2rem);
+        margin: 1.5rem 0 0 1rem;
+    }
+    .sign-out-btn {
+        margin: .8rem 1rem 0 0;
+        font-size: .7rem;
+        padding: .8rem 1rem !important;
+    }
+    .author-div {
+        transform: translateY(-.4rem);
+    }
+    .createPostInput {
+        width: 70%;
+    }
+    .emptyText {
+        padding: 0 1rem;
+        font-size: 1.5rem;
+    }
+}

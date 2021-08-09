@@ -1,0 +1,112 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    min-width: 400px;
+    min-height: 100vh;
+    background: #252525;
+}
+
+[id='search-btn'] {
+    position: absolute;
+    left: -100vw;
+}
+
+[id='search-btn']~* {
+    --i: var(--pos, 1);
+    --j: calc(1 - var(--i));
+}
+
+[id='search-btn']:checked~* {
+    --pos: 0;
+}
+
+[for='search-btn'] {
+    order: 1;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    margin-left: -1.25em;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    transform: translate(var(--pos, -10em));
+    /* rotate(45deg); */
+    background: white;
+    text-indent: -100vw;
+    transition: 0.65s ease-out;
+    cursor: pointer;
+}
+
+
+/* [for='search-btn']:before, */
+
+[for='search-btn']:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -0.8125em;
+    width: 1.625em;
+    height: 1.625em;
+    transition: inherit;
+    content: '';
+}
+
+[for='search-btn']::after {
+    content: 'f067';
+}
+
+[id='search-bar'] {
+    margin-right: -1.25em;
+    border: none;
+    padding: 0 1em;
+    width: 20em;
+    height: 3.25em;
+    border-radius: 3.25em;
+    transform: translate(var(--pos, 10em));
+    background: #3f324d;
+    --cp: inset(-2em var(--pos, 100%) -2em -2em);
+    -webkit-clip-path: var(--cp);
+    clip-path: var(--cp);
+    color: #fff;
+    font: 1em century gothic, verdana, arial, sans-serif;
+    transition: 0.65s;
+}
+
+[id='search-bar']::placeholder {
+    opacity: 0.5;
+    color: inherit;
+    font-size: 0.875em;
+    letter-spacing: 1px;
+    text-shadow: 0 0 1px, 0 0 2px;
+}
+
+[id='search-bar']:focus {
+    outline: none;
+    box-shadow: 0 0 1.5em #ffeacc, 0 1.25em 1.5em rgba(0, 0, 0, .2);
+    background: #ffeacc;
+    color: #000;
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        overflow-x: unset;
+    }
+    body {
+        min-width: 0px;
+    }
+    [for='search-btn'] {
+        width: 3rem;
+        height: 3rem;
+    }
+    [id='search-bar'] {
+        width: 18rem;
+        height: 2.25rem;
+        transform: translate(var(--pos, 5rem));
+    }
+}
